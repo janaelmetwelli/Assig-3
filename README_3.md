@@ -207,33 +207,6 @@ Please note that this comparison is based on a single snapshot of the current we
 }
 -------------------------
 
-Advanced Weather Assistant: Hello! Ask me complex weather questions.
-I can compare cities, perform calculations, and return structured outputs.
-(Type 'exit' to end the conversation)
-
-You: Compare the current weather in Cairo, Riyadh, and London.
-
-Advanced Weather Assistant: Here is a comparison of current conditions:
-
-- Cairo: 28°C, Partly Cloudy, Humidity 45%, Wind 15 km/h
-- Riyadh: 35°C, Sunny, Humidity 18%, Wind 22 km/h
-- London: 11°C, Overcast, Humidity 78%, Wind 30 km/h
-
-Riyadh is the hottest city at 35°C, while London is the coolest at 11°C.
-The temperature range across the three cities is 24°C.
-
---- Structured Output ---
-{
-  "query_type": "comparison",
-  "locations": ["Cairo", "Riyadh", "London"],
-  "summary": "Compared current weather conditions across three cities",
-  "tool_calls_used": ["get_current_weather", "get_current_weather", "get_current_weather"],
-  "final_answer": "Riyadh is the hottest at 35°C, Cairo is 28°C, and London is the coolest at 11°C. The spread is 24°C."
-}
--------------------------
-
-You: exit
-```
 
 ---
 
